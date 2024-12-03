@@ -5,47 +5,48 @@ import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
+import email from '../../assets/footer/email.png';
 import location from '../../assets/footer/location.png';
 
 const Footer = () => {
 
     const footerMenu = [
         {
-            'name' : 'About Us',
+            'name' : 'Giới thiệu',
             'link' : '/'
         },
         {
-            'name' : 'Dental Services',
+            'name' : 'Sản phẩm',
             'link' : '/'
         },
         {
-            'name' : 'Dentist',
+            'name' : 'Dịch Vụ',
             'link' : '/'
         },
         {
-            'name' : 'Blogs',
+            'name' : 'Kiến thức',
             'link' : '/'
         },
         {
-            'name' : 'FAQs',
+            'name' : 'Liên hệ',
             'link' : '/'
         }
     ];
 
     const footerContacts = [
         {
-            'title': 'Phone Number',
-            'info': '+088 123 654 987',
+            'title': 'Số điện thoại',
+            'info': '098 123 4567',
             'icon': call
         },
         {
-            'title': 'Open Hour',
-            'info': '09:00 AM - 18:00 PM',
-            'icon': time
+            'title': 'Email',
+            'info': 'lienhe@drhai.vn',
+            'icon': email
         },
         {
-            'title': 'Clinic Address',
-            'info': '35 West Dental Street California 1004',
+            'title': 'Trụ sở chính',
+            'info': 'Số 1 Tôn Thất Tùng, Q. Đống Đa, Hà Nội ',
             'icon': location
         }
     ]
@@ -58,10 +59,10 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                        <p>DRHAI Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         <div className="social-logo">
-                            <p>Follow us on</p>
+                            <p>Theo dõi chúng tôi trên</p>
                             <ul>
                                 <li><a href="/"><FaFacebookF/></a></li>
                                 <li><a href="/"><FaTwitter/></a></li>
@@ -71,7 +72,7 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-2 col-md-2">
                         <div className="footer-link">
-                            <p>Quick Links</p>
+                            <p>Liên Kết</p>
                             <ul>
                                 {
                                     footerMenu.map(singleMenu => <li><Link to="/">{singleMenu.name}</Link></li>)
@@ -81,7 +82,7 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-4 col-md-5">
                         <div className="footer-contact">
-                            <p>Contact & Information</p>
+                            <p>Địa chỉ và Liên hệ</p>
 
                             {
                                 footerContacts.map(footerContact => {
@@ -102,12 +103,12 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Dentalist. All Right Reserved</p>
+                        <p>&copy; Copyright 2024. Bản quyền thuộc về DRHAI.</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>
-                            <li><Link to='/'>Terms of Use</Link></li>
-                            <li><Link to='/'>Privacy Policy</Link></li>
+                            <li><Link to='/'>Điều khoản sử dụng</Link></li>
+                            <li><Link to='/'>Chính sách bảo mật</Link></li>
                         </ul>
                     </div>                          
                 </div>

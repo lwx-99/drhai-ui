@@ -10,9 +10,10 @@ footer {
 
     .social-logo {
         p {
-            font-size: 12px;
+            font-size: 16px;
             text-transform: uppercase;
             font-weight: 600;
+            color: $color-white;
         }
 
         ul {
@@ -22,10 +23,12 @@ footer {
             li {
                 list-style: none;
                 display: inline-block;
+                font-size: 2rem;
                 
                 a {
                     color: $color-white;
-                    margin-right: 10px;
+                    margin-right: 20px;
+                    
                 }
             }
         }

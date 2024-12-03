@@ -7,24 +7,24 @@ const Navbar = () => {
 
     const navbarItems = [
         {
-            name: 'Home',
+            name: 'Trang Chủ',
             path: '/',
         },
         {
-            name: 'About Us',
-            path: '/about',
+            name: 'Giới thiệu',
+            path: '/gioi-thieu',
         },
         {
-            name: 'Single Service',
-            path: '/singleservice',
+            name: 'Sản phẩm',
+            path: '/san-pham',
         },
         {
-            name: 'Blogs',
-            path: '/blogs',
+            name: 'Bài Viết',
+            path: '/bai-viet',
         },
         {
-            name: 'Contact Us',
-            path: '/contact',
+            name: 'Liên hệ',
+            path: '/lien-he',
         }
     ];
 
@@ -53,8 +53,8 @@ const Navbar = () => {
                             </ul>
                             
                             {/* Navbar Button */}
-                            <div className="theme-btn">
-                                <Link to="/contact">Book appointment</Link>
+                            <div className="theme-btn mb-2 mb-lg-0">
+                                <Link to="/contact">LIÊN HỆ TƯ VẤN</Link>
                             </div>
                         </div>
                     </div>
