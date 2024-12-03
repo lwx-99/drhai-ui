@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactForm.scss';
-import icon from '../../assets/banner/icons/Calling.png';
+import icon from '../../assets/footer/calling.png';
 
 const ContactForm = () => {
     return (
@@ -8,17 +8,17 @@ const ContactForm = () => {
             <div className="row">
                 <div className="col-lg-6">
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="email" class="form-control" placeholder="Enter your name..." />
+                        <label>Tên</label>
+                        <input type="email" class="form-control" placeholder="Nhập tên của bạn..." />
                     </div>
                 </div>
                 <div className="col-lg-6">
                     <div class="form-group">
-                        <label>E-mail Address</label>
-                        <input type="email" class="form-control" placeholder="Enter email address..." />
+                        <label>Số điện thoại</label>
+                        <input type="tel" class="form-control" placeholder="Nhập số điện thoại..." />
                     </div>
                 </div>
-                <div className="col-lg-6">
+                {/*<div className="col-lg-6">
                     <div class="form-group">
                         <label>Service</label>
                         <select class="form-control">
@@ -39,16 +39,16 @@ const ContactForm = () => {
                             <option>Select Department</option>
                         </select>
                     </div>
-                </div>
+                </div>*/}
                 <div className="col-lg-12">
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Messages</label>
-                        <textarea class="form-control" placeholder='Enter your messages...' rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1">Lời nhắn</label>
+                        <textarea class="form-control" placeholder='Lời nhắn của bạn...' rows="3"></textarea>
                     </div>
                 </div>
 
                 <div className="col-lg-6">
-                    <button type="submit" class="btn appointment-btn">Book an appointment</button>
+                    <button type="submit" class="btn appointment-btn">GỬI LIÊN HỆ</button>
                 </div>
                 <div className="col-lg-6">
                     <div className="appointment-call">
@@ -56,8 +56,8 @@ const ContactForm = () => {
                             <img src={icon} alt="icon" />
                         </div>
                         <div className='call-text'>
-                            <p>Dental 24H Emergency</p>
-                            <h6>03 482 394 123</h6>
+                            <p>Hotline liên hệ</p>
+                            <h6>098 123 4567</h6>
                         </div>
                     </div>
                 </div>

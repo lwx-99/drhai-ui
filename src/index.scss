@@ -10,6 +10,12 @@ body {
 img {
     max-width: 100%;
 }
+
+footer p { 
+    color: $color-gray;
+    font-size: 18px;
+}
+
 p {
     color: #3b3b3b;
     font-size: 18px;

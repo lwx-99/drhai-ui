@@ -59,7 +59,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>DRHAI Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className="short-des">DRHAI Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         <div className="social-logo">
                             <p>Theo dõi chúng tôi trên</p>
