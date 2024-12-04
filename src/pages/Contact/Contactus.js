@@ -11,7 +11,7 @@ const Contactus = () => {
             <section className='section-bg section-common contact-section'>
                 <Navbar />
                 <SectionTitle 
-                    title="Contact Us"
+                    title="Liên Hệ"
                     description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
                 />
             </section>

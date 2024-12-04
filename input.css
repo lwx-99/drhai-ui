@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.collapse {
+    visibility: inherit;
+}
+
+/*tag btn*/
+.category-selected {
+    background-color: #228b40 !important;
+    color: white !important;
+  }

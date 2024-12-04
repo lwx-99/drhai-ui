@@ -17,9 +17,9 @@ footer p {
 }
 
 p {
-    color: #3b3b3b;
-    font-size: 18px;
+    margin-bottom: 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
     color: $color-black;
     margin-bottom: 0;
@@ -68,6 +68,87 @@ h1, h2, h3, h4, h5, h6 {
 .pb-70 {
     padding-bottom: 70px;
 }
+
+.breadcrumb a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #969696;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb a::after {
+    content: "/";
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .breadcrumb a:hover {
+    font-weight: 600;
+    color: #2b974a;
+    transition: all 0.1s ease-in;
+  }
+  
+  .breadcrumb a:last-child::after {
+    content: "";
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .markdown-parser {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+    
+    .markdown-parser h1 {
+    font-size: 2rem;
+    }
+    
+    .markdown-parser h2 {
+    font-size: 1.5rem;
+    }
+    
+    .markdown-parser h3 {
+    font-size: 1.25rem;
+    }
+    
+    .markdown-parser h4 {
+    font-size: 1.125em;
+    }
+    
+    .markdown-parser h5 {
+    font-size: 1rem;
+    }
+    
+    .markdown-parser h6 {
+    font-size: 1rem;
+    }
+    
+    /* Style for paragraph elements */
+    .markdown-parser p {
+      font-size: 1rem;
+      line-height: 2;
+      text-align: left !important;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .markdown-parser blockquote {
+    padding: 8px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(153 27 27);
+    border-radius: 5px;
+    }
+    
+    .markdown-parser img {
+    width: 100%;
+    border-radius: 5px;
+    }
+    
+    .markdown-parser ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    }
 
 // Mobile Responsive
 @media (max-width: 575px){

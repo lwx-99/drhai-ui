@@ -1,0 +1,30 @@
+.not-found {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found h2 {
+     font-size: 8rem;
+}
+
+.not-found p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.not-found a {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    background-color: #1a48fe;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.not-found a:hover {
+    background-color: #001669;
+}

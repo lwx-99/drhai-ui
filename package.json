@@ -7,14 +7,26 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.7.8",
     "bootstrap": "^5.2.2",
+    "dotenv": "^16.4.5",
+    "feather-icons": "^4.29.2",
+    "@emotion/styled": "^11.13.5",
+    "framer-motion": "^11.13.1",
+    "html-react-parser": "^5.1.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-share": "^5.1.1",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.8",
     "sass": "^1.55.0",
+    "styled-components": "^5.3.5",
+    "twin.macro": "^3.0.0-rc.4",
+    "use-react-router-breadcrumbs": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
   }
 }

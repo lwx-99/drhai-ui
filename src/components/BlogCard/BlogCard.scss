@@ -10,6 +10,10 @@
         position: relative;
         margin-bottom: 20px;
 
+        img {
+            border-radius: 32px;
+        }
+
         .date {
             position: absolute;
             top: 15px;
@@ -17,7 +21,7 @@
             background: $color-white;
             border-radius: 15px;
             text-align: center;
-            padding: 15px;
+            padding: 4px 10px;
 
             h6 {
                 font-size: 16px;
@@ -49,7 +53,7 @@
         a {
             text-decoration: none;
             color: $color-black;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             margin-bottom: 20px;
             display: inline-block;
