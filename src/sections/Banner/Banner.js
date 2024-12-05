@@ -16,19 +16,19 @@ const Banner = () => {
         <section className='section-bg section-common banner-section'>
             <div className="d-table">
                 <div className="d-table-cell">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6">
+                    <div className="container h-full">
+                        <div className="row h-full">
+                            <div className="col-lg-6 h-full flex justify-center items-center">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>Chuyên gia y khoa hàng đầu</h1>
-                                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                    <h1>Chuyên gia y khoa hàng đầu trong lĩnh vực cơ xương khớp</h1>
+                                    <p className="text-lg">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                            <Link to="/contact">TÌM HIỂU NGAY</Link>
+                                            <Link to="/gioi-thieu">TÌM HIỂU NGAY</Link>
                                         </div>
 
-                                        <div className="banner-call">
+                                        <div className="banner-call py-6 md:pt-0">
                                             <div className='icon'>
                                                 <img src={icon} alt="icon" />
                                             </div>
@@ -41,7 +41,7 @@ const Banner = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 h-full flex justify-center items-center">
                                 <div className="banner-img-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                                     <div className="banner-img">
                                         <img src={bannerImg} alt="banner model" />
@@ -52,7 +52,7 @@ const Banner = () => {
                                         </div>*/}
                                         <div className='info-text'>
                                             <p>Dr. Lê Thanh Hải</p>
-                                            <p><small>Bác Sĩ Chuyên Khoa 1 BV 108</small></p>
+                                            <p><small>Bác Sĩ Chuyên Khoa Xương Khớp BV108</small></p>
                                         </div>
                                     </div>  
 

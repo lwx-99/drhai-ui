@@ -9,16 +9,20 @@
     }
 
     .services-link {
-        margin: 50px 0 30px;
+        margin: 0 auto;
 
         a {
-            color: $color-blue;
+            width: 250px;
+            color: $color-blue-02;
             text-decoration: none;
             font-weight: 700;
-            background: #583fbc1e;
-            padding: 15px 25px;
-            display: inline-block;
+            background: #DBEFFA;
+            padding: 15px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 15px;
+            margin: 20px auto 0 auto;
 
             svg {
                 margin-left: 10px;

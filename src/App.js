@@ -10,6 +10,8 @@ import Contactus from './pages/Contact/Contactus';
 import ScrollToTop from "./helpers/ScrollToTop";
 import axios from "axios";
 import NotFound from './components/404/NotFound';
+import ProductPage from './pages/ProductPage'
+import SingleProduct from './pages/SingleProduct/SingleProduct'
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
     axios
-      .get(`${process.env.REACT_APP_BACKEND}/api/posts?populate=*&pagination[limit]=6&sort[0]=createdAt:desc`)
+      .get(`${process.env.REACT_APP_BACKEND}/api/bai-viets?populate=*&pagination[limit]=6&sort[0]=createdAt:desc`)
       .then(({ data }) => setLatestPost(data.data))
       .catch((error) => setError(error));
   }
@@ -31,7 +33,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
     axios
-      .get(`${process.env.REACT_APP_BACKEND}/api/categories?populate=*&sort[0]=createdAt:desc`)
+      .get(`${process.env.REACT_APP_BACKEND}/api/danh-mucs?populate=*&sort[0]=createdAt:desc`)
       .then(({ data }) => setCategories(data.data))
       .catch((error) => setError(error));
   }
@@ -45,7 +47,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gioi-thieu" element={<About />} />
-        <Route path="/san-pham" element={<Services />} />
+        <Route path="/san-pham" element={<ProductPage />} />
+        <Route path="/san-pham/:id" element={<SingleProduct />} />
         <Route path="/bai-viet" element={<BlogsPage categories={categories}/>}  />
         <Route path="/bai-viet/:id" element={<SingleBlog latestPost={latestPost} />} />
         <Route path="/lien-he" element={<Contactus />} />

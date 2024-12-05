@@ -1,0 +1,33 @@
+.projectHidden{
+    z-index: 0;
+    transition: all 0.001s linear;
+  }
+
+.projectShowing{
+    z-index: 100;
+    display: block;
+    transition: all 0.001s linear;
+  }
+
+  .blob-blue {
+    box-shadow: 0 0 0 0 rgb(59, 147, 230);
+    animation: pulse-blue 2s infinite;
+  }
+  
+  @keyframes pulse-blue {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(45, 153, 255, 0.85);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 12px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+  }
+  

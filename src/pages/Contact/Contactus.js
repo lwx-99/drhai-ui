@@ -10,10 +10,10 @@ const Contactus = () => {
         <>
             <section className='section-bg section-common contact-section'>
                 <Navbar />
-                <SectionTitle 
-                    title="Liên Hệ"
-                    description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-                />
+                    <SectionTitle
+                        title="Liên Hệ"
+                        description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                    />
             </section>
             <section className='contact-form-area' data-aos="fade-up" data-aos-duration="2000">
                 <ContactForm />

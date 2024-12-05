@@ -7,6 +7,8 @@ const Breadcrumbs = ({prop}) => {
 
   const routes = [
     { path: "/", breadcrumb: "Trang Chủ" },
+    { path: "/san-pham/", breadcrumb: 'Sản Phẩm' },
+    { path: "/san-pham/:id", breadcrumb: prop },
     { path: "/lien-he/", breadcrumb: 'Liên Hệ' },
     { path: "/bai-viet/", breadcrumb: 'Bài Viết' },
     { path: "/bai-viet/:id", breadcrumb: prop },

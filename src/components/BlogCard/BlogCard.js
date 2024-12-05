@@ -19,8 +19,8 @@ const BlogCard = ({post}) => {
                     </div>
                 </div>
                 <div className="blog-text">
-                    <span><Link to="/">{post.attributes.categories.data[0].attributes.category_name}</Link></span>
-                    <h3><Link to={`/bai-viet/${post.attributes.post_uid}`}>{post.attributes.post_title}</Link></h3>
+                    <span><Link to="/">{post.attributes.danh_mucs.data[0].attributes.category_name}</Link></span>
+                    <h3><Link className="hover:text-primary-700" to={`/bai-viet/${post.attributes.post_uid}`}>{post.attributes.post_title}</Link></h3>
                     {post.attributes.post_summary && <p>{post.attributes.post_summary}</p> }
                 </div>
             </div>

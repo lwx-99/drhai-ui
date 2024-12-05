@@ -81,7 +81,7 @@ const SingleBlog = ( { latestPost } ) => {
     useEffect(() => {
         async function fetchData() {
           axios
-          .get(`${process.env.REACT_APP_BACKEND}/api/posts?filters[post_uid][$eq]=${postId.id}&populate=deep`)
+          .get(`${process.env.REACT_APP_BACKEND}/api/bai-viets?filters[post_uid][$eq]=${postId.id}&populate=deep`)
           .then(({ data }) => 
             {
               setPost(data.data);
@@ -110,7 +110,7 @@ const SingleBlog = ( { latestPost } ) => {
                                 </div>    
                                 <p className="single-blog-category">
                                     <MetaContainer>
-                                        {post[0].attributes.categories.data.map((category, index) => (
+                                        {post[0].attributes.danh_mucs.data.map((category, index) => (
                                             <Meta key={index}>
                                                 <TagIcon />
                                                 <div>{category.attributes.category_name}</div>
@@ -123,10 +123,10 @@ const SingleBlog = ( { latestPost } ) => {
                                 <AuthorShare>
                                   <div className='author-container'>
                                     <div>
-                                      <img src={post[0].attributes.authors.data[0].attributes.author_avatar.data.attributes.formats.small.url} className='author-img'/>
+                                      <img src={post[0].attributes.tac_gias.data[0].attributes.tac_gia_avatar.data.attributes.url} className='author-img'/>
                                     </div>
                                     <div>
-                                      <p className='author-name'>{post[0].attributes.authors.data[0].attributes.author_name}</p>
+                                      <p className='author-name'>{post[0].attributes.tac_gias.data[0].attributes.ten_tac_gia}</p>
                                       <p className='published-date'>vào {new Date(post[0].attributes.publishedAt).toLocaleDateString("vi-VN", {
                                           weekday: 'long',
                                           year: 'numeric',
@@ -189,10 +189,10 @@ const SingleBlog = ( { latestPost } ) => {
                                           <PostTextContainer>
                                             <Title>{post.attributes.post_title}</Title>
                                             <MetaContainer>
-                                                  <AuthorName>{post.attributes.authors.data[0].attributes.author_name}</AuthorName>
+                                                  <AuthorName>{post.attributes.tac_gias.data[0].attributes.author_name}</AuthorName>
                                                 <Meta>
                                                   <TagIcon />
-                                                  <div>{post.attributes.categories.data[0].attributes.category_name}</div>
+                                                  <div>{post.attributes.danh_mucs.data[0].attributes.category_name}</div>
                                                 </Meta>
                                             </MetaContainer>
                                           </PostTextContainer>

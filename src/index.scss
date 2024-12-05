@@ -2,6 +2,11 @@
 @import './sass/colors.scss';
 
 // Common CSS
+
+a {
+    text-decoration: none;
+}
+
 body {
     padding: 0;
     margin: 0;

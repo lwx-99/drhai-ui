@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react'
 import './Navbar.scss';
 import logo from './../../assets/logo.png';
 import {Link} from 'react-router-dom';
 
 const Navbar = () => {
+
+    const [top, setTop] = useState(true);
+
+    useEffect(() => {
+        const scrollHandler = () => {
+          window.scrollY > 10 ? setTop(false) : setTop(true)
+        };
+        window.addEventListener('scroll', scrollHandler);
+        return () => window.removeEventListener('scroll', scrollHandler);
+      }, [top]);
 
     const navbarItems = [
         {
@@ -29,7 +39,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='main-nav'>
+        <div className={`main-nav ${!top && 'bg-white shadow-md py-1'}`}>
             <div className="container">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
@@ -54,7 +64,7 @@ const Navbar = () => {
                             
                             {/* Navbar Button */}
                             <div className="theme-btn mb-2 mb-lg-0">
-                                <Link to="/contact">LIÊN HỆ TƯ VẤN</Link>
+                                <Link to="/lien-he">LIÊN HỆ TƯ VẤN</Link>
                             </div>
                         </div>
                     </div>
