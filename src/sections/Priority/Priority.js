@@ -17,13 +17,13 @@ const Priority = () => {
                     <div className="col-lg-6 col-md-6">
                         <div className="priority-text">
                             <SectionTitle 
-                                subTitle="OUR PRIORITY" 
-                                title="Our clients are our priority"
+                                subTitle="Chất lượng hàng đầu" 
+                                title="Bảo vệ sức khỏe xương khớp của bạn"
                                 description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
                             />
 
                             <div className="theme-btn">
-                                <Link to='/'>Book an appointment</Link>
+                                <Link to='/'>Liên hệ</Link>
                             </div>
                         </div>
                     </div>

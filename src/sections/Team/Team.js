@@ -34,9 +34,8 @@ const Team = () => {
                 <div className="row">
                     <div className="col-lg-7">
                         <SectionTitle 
-                            subTitle="Meet our Team"
-                            title="Get to know the dentalist
-                            dental Team"
+                            subTitle=""
+                            title="Đội ngũ chuyên gia đầu ngành"
                         />
                     </div>
 
