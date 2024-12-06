@@ -9,8 +9,11 @@ import Features from '../sections/Features/Features';
 import Footer from '../sections/Footer/Footer';
 import Services from '../sections/Services/Services';
 import Testimonial from '../sections/Testimonial/Testimonial';
+import ProductCollection from '../components/ProductCollection/ProductCollection';
+import HomeProduct from '../components/HomeProduct/HomeProduct';
+import HomeBlog from '../components/HomeBlog/HomeBlog';
 
-const Home = () => {
+const Home = ({categories}) => {
 
     return (
         <>
@@ -18,9 +21,11 @@ const Home = () => {
             <Banner/>
             <Services/>
             <Emergency/>
-            <Features />
+            <HomeProduct />
+            <HomeBlog/>
+            {/*<Features />
             <Expert/>
-            <Testimonial/>
+            <Testimonial/>*/}
             {/*<Blogs/>*/}
             <Appointment/>
             <Footer/>

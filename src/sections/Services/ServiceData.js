@@ -6,22 +6,22 @@ import iconFour from '../../assets/service/4.png';
 const ServicesData = [
     {
         'icon': iconOne,
-        'title': 'Dentures',
+        'title': 'Loãng xương',
         'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
     },
     {
         'icon': iconTwo,
-        'title': 'Implants',
+        'title': 'Chấn thương',
         'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
     },
     {
         'icon': iconThree,
-        'title': 'Whitening',
+        'title': 'Thoái hóa khớp',
         'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
     },
     {
         'icon': iconFour,
-        'title': 'Root Canal',
+        'title': 'Tổn thương gân cơ',
         'description': 'Lorem ipsum is placeholder text commonly used in the graphic,',
     }
 ]

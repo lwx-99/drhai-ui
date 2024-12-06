@@ -63,7 +63,7 @@ const Navbar = () => {
                             </ul>
                             
                             {/* Navbar Button */}
-                            <div className="theme-btn mb-2 mb-lg-0">
+                            <div className="theme-btn nav text-base mb-2 mb-lg-0">
                                 <Link to="/lien-he">LIÊN HỆ TƯ VẤN</Link>
                             </div>
                         </div>

@@ -47,8 +47,8 @@ const PostImage = tw.img`w-full mx-auto rounded-lg mt-0`;
 //For Recent Posts Col
 const Title = tw.h5`mt-6 text-lg font-bold transition duration-300 group-hover:text-primary-600`;
 const AuthorName = tw.h6`font-semibold text-sm text-gray-700`;
-const PostsContainer = tw.div`mt-6 flex flex-col sm:flex-col sm:justify-between lg:justify-start bg-gray-100 p-4 rounded`;
-const Post = tw.a`block no-underline sm:max-w-sm cursor-pointer mb-16 last:mb-0`;
+const PostsContainer = tw.div`mt-6 flex flex-col sm:flex-col sm:justify-between lg:justify-start bg-gray-100 p-4 rounded-xl shadow-md`;
+const Post = tw.a`no-underline flex flex-col justify-start items-start sm:max-w-sm cursor-pointer mb-16 last:mb-0`;
 const Image = tw.img`rounded-lg`
 const Summary = tw.p`text-gray-700 text-base w-full py-4 px-5 bg-gray-200 italic rounded-lg mt-10`
 const PostTextContainer = tw.div`mr-3`
@@ -57,7 +57,7 @@ const PostContent = styled.div`${tw`mt-8`}
 
 const MetaContainer = tw.div`flex items-center justify-between mb-2 mt-2 gap-2`;
 const Meta = styled.div`
-  ${tw`bg-gray-200 p-1 rounded text-primary-600 border border-primary-600 font-medium text-sm flex items-center leading-none last:mr-0 inline-block`}
+  ${tw`bg-gray-200 p-1 mb-2 rounded text-primary-600 border border-primary-600 font-medium text-sm flex items-center leading-none last:mr-0 inline-block`}
   svg {
     ${tw`w-4 h-4 mr-1`}
 }`
@@ -182,14 +182,13 @@ const SingleBlog = ( { latestPost } ) => {
                         <div className="col-lg-3">
                             <div className="blog-sidebar">
                                          <div className="sidebar-category mb-3">
-                                    <h3 className="sidebar-heading">Bài viết gần đây</h3>
+                                    <h3 className="sidebar-heading text-lg">Bài viết gần đây</h3>
                                       <PostsContainer>
                                         {latestPost.map((post, index) => (
                                         <Post key={index} href={`/bai-viet/${post.attributes.post_uid}`} className="group">
                                           <PostTextContainer>
                                             <Title>{post.attributes.post_title}</Title>
                                             <MetaContainer>
-                                                  <AuthorName>{post.attributes.tac_gias.data[0].attributes.author_name}</AuthorName>
                                                 <Meta>
                                                   <TagIcon />
                                                   <div>{post.attributes.danh_mucs.data[0].attributes.category_name}</div>

@@ -8,7 +8,7 @@ const BlogCard = ({post}) => {
         <div className='col-lg-4 col-md-6 col-sm-6'>
             <div className="blog-card">
                 <div className="blog-img">
-                    <img src={post.attributes.post_banner.data.attributes.url} alt="blog"/>
+                    <img className="" src={post.attributes.post_banner.data.attributes.url} alt="blog"/>
                     <div className="date">
                         {new Date(post.attributes.publishedAt).toLocaleDateString("vi-VI", {
                         weekday: 'long',

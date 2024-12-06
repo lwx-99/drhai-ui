@@ -1,3 +1,6 @@
+
+@import '../../sass/colors.scss';
+
 .service-box {
     border: 1px solid #1819451a;
     padding: 15px;
@@ -24,7 +27,7 @@
 
             a {
                 text-decoration: none;
-                color: #181945;
+                color: $color-black;
             }
         }
 

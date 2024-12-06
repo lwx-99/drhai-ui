@@ -8,7 +8,7 @@ const Faq = () => {
             <div className="container">
                 <SectionTitle
                     subTitle="FAQ"
-                    title="Frequently asked question"
+                    title="Câu hỏi thường gặp"
                 />
 
                 <div className="accordian-area">

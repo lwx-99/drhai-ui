@@ -76,7 +76,7 @@ function SingleProduct() {
             <div className='flex flex-col md:flex-row justify-center mb-20 w-auto'>
               
                 <div className='flex flex-col relative'>
-                    {product[0].attributes.gia_sanpham && <div className='absolute top-4 right-4 text-black py-2 px-5 bg-gray-100 text-3xl font-bold rounded-full tracking-wide z-50'>{product[0].attributes.gia_sanpham}</div>}
+                    {product[0].attributes.gia_sanpham && <div className='absolute top-4 right-4 text-secondary-600 py-2 px-4 bg-gray-100 shadow-md text-2xl font-bold rounded-full tracking-wide z-50'>{product[0].attributes.gia_sanpham}</div>}
                     { product[0].attributes.thuvien_hinhanh.data ? 
                       <div>
                           <Carousel prop={product[0].attributes.thuvien_hinhanh.data}/> 
