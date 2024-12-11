@@ -45,12 +45,12 @@ const AuthorShare = styled.div`
 const PostImage = tw.img`w-full mx-auto rounded-lg mt-0`;
 
 //For Recent Posts Col
-const Title = tw.h5`mt-6 text-lg font-bold transition duration-300 group-hover:text-primary-600`;
+const Title = tw.h5`text-lg font-bold transition duration-300 group-hover:text-primary-600`;
 const AuthorName = tw.h6`font-semibold text-sm text-gray-700`;
-const PostsContainer = tw.div`mt-6 flex flex-col sm:flex-col sm:justify-between lg:justify-start bg-gray-100 p-4 rounded-xl shadow-md`;
-const Post = tw.a`no-underline flex flex-col justify-start items-start sm:max-w-sm cursor-pointer mb-16 last:mb-0`;
+const PostsContainer = tw.div`flex flex-col sm:flex-col sm:justify-between lg:justify-start bg-gray-100 p-4 rounded-xl`;
+const Post = tw.a`no-underline flex flex-col justify-start items-start sm:max-w-sm cursor-pointer mb-6 last:mb-0`;
 const Image = tw.img`rounded-lg`
-const Summary = tw.p`text-gray-700 text-base w-full py-4 px-5 bg-gray-200 italic rounded-lg mt-10`
+const Summary = tw.p`text-gray-700 text-sm w-full py-4 px-5 bg-gray-200 italic rounded-lg mt-10`
 const PostTextContainer = tw.div`mr-3`
 const PostContent = styled.div`${tw`mt-8`}
 `

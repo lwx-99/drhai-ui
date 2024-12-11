@@ -29,28 +29,29 @@ function ProductCollection() {
 
 
   return (
-    <div className="pt-40 px-4 md:px-2 container" id='product-page'>
+    <div className="" id='product-page'>
         <div className='flex flex-col justify-start'>
           <div className='title-container'>
               <h2 className='text-4xl md:text-6xl font-bold'>Sản Phẩm</h2>
+              <div className='w-auto md:w-auto flex flex-col justify-center'>
+                  <p className='w-full text-left text-base'></p>
+              </div>
           </div>
         </div>
-
         { !isLoading ? 
         <div className='mt-12 md:mt-20'>
             {collection.map( (collection) => (
 
-                <div className='mb-40' key={collection.id}>
-                  <div className="mb-12 flex justify-between items-center">
-                      <div className='w-10 md:w-80 border-b-4 border-gray-300'></div>
-                      <div className='w-auto md:w-auto flex flex-col justify-center px-2'>
-                          <h2 className="text-center text-3xl md:text-4xl text-primary-700 font-bold">{collection.attributes.ten_bo_san_pham}</h2>
+                <div className='mb-32' key={collection.id}>
+                  <div className="mb-3 flex-col justify-between items-center">
+                      <div className='w-full border-b-2 border-gray-300 mb-5'></div>
+                      <div className='w-auto md:w-auto flex flex-col justify-center'>
+                          <h2 className="text-left text-3xl md:text-4xl text-primary-700 font-bold">{collection.attributes.ten_bo_san_pham}</h2>
                       </div>
-                      <div className='w-10 md:w-80 border-b-4 border-gray-300'></div>
                   </div>
 
                   <div className='flex justify-center mb-10'>
-                    <p className='w-4/5 text-center text-lg'>{collection.attributes.mo_ta_ngan}
+                    <p className='w-full text-left text-base'>{collection.attributes.mo_ta_ngan}
                     </p>
                   </div>
 

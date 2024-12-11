@@ -72,7 +72,7 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-2 col-md-2">
                         <div className="footer-link">
-                            <p>Liên Kết</p>
+                            <p className='mb-3'>Liên Kết</p>
                             <ul>
                                 {
                                     footerMenu.map(singleMenu => <li><Link to="/">{singleMenu.name}</Link></li>)

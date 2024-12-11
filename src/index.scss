@@ -4,6 +4,11 @@
 
 // Common CS
 
+.no-scroll {
+    overflow-y: hidden;
+    touch-action: none;
+  }
+
 a {
     text-decoration: none;
 }
@@ -18,7 +23,7 @@ img {
 }
 
 footer p { 
-    color: $color-gray;
+    color: $color-gray-green;
     font-size: 18px;
 }
 
@@ -27,28 +32,28 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $color-black;
+    color: $color-deep-green;
     margin-bottom: 0;
 }
 .theme-btn {
     a {
-        background: $color-blue;
+        background: $color-deep-green;
         color: $color-white;
         padding: 8px 20px;
         text-decoration: none;
         text-transform: uppercase;
-        border-radius: 15px;
+        border-radius: 99px;
         transition: .3s;
         border: 1px solid transparent;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         display: inline-block;
         box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 
         &:hover {
-            background: $color-white;
-            color: $color-blue;
-            border: 1px solid $color-blue;
+            background: $color-green;
+            color: $color-white;
+            border: 1px solid $color-green;
         }
         
     }
@@ -115,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   .markdown-parser {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     }
     
     .markdown-parser h1 {
@@ -144,8 +149,8 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Style for paragraph elements */
     .markdown-parser p {
-      font-size: 1rem;
-      line-height: 2;
+      font-size: 14px;
+      line-height: 1.75;
       text-align: left !important;
       font-family: 'Montserrat', sans-serif;
     }

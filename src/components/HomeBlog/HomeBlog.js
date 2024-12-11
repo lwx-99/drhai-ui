@@ -20,7 +20,7 @@ const Meta = styled.a`
   }
 `
 const ButtonContainer =  styled.div`${tw `flex justify-center items-center w-full`}`;
-const LoadMoreButton =  styled.button`${tw `mt-8 mx-auto font-medium text-lg text-white px-4 py-2 rounded-lg border border-primary-700 bg-primary-700 hover:bg-secondary-600`}`;
+const LoadMoreButton =  styled.button`${tw `mt-8 mx-auto uppercase font-semibold text-base text-white px-5 py-2 rounded-full bg-secondary-600 hover:bg-primary-600`}`;
 
 
 const override = {
@@ -73,11 +73,11 @@ const HomeBlog = () => {
                     </div>
                 </div>
                 <div className='flex justify-center'>
-                    <p className='w-full text-left text-secondary-600 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className='w-full text-left text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
               { !isLoading ? 
-                  <section className='pb-70' data-aos="fade-up" data-aos-duration="2000">
+                  <section className='pb-70'>
                       <div className="container ">
                           <div className="row">
                               {

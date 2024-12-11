@@ -47,11 +47,9 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-6">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full">
                     <button type="submit" class="btn appointment-btn">GỬI LIÊN HỆ</button>
-                </div>
-                <div className="col-lg-6">
-                    <div className="appointment-call">
+                    <div className="appointment-call py-4">
                         <div className='icon'>
                             <img src={icon} alt="icon" />
                         </div>

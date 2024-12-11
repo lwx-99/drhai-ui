@@ -19,12 +19,13 @@ const Home = ({categories}) => {
         <>
             <Navbar/>
             <Banner/>
+            <Expert/>
             <Services/>
             <Emergency/>
             <HomeProduct />
             <HomeBlog/>
             {/*<Features />
-            <Expert/>
+            
             <Testimonial/>*/}
             {/*<Blogs/>*/}
             <Appointment/>

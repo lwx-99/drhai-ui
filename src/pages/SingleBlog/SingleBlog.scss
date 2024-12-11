@@ -5,13 +5,13 @@
 }
 
 .single-blog-area {
-    padding: 50px 25px;
+    padding: 0px 0px 50px 0px;
     border-radius: 12px;
 
     .single-blog-category {
         font-size: 12px;
         font-weight: 600;
-        color: $color-blue;
+        color: $color-deep-green;
         margin-bottom: 10px;
     }
 
@@ -31,13 +31,12 @@
     .single-post-quote {
         background: #583fbc1f;
         padding: 15px;
-        border-left: 2px solid $color-blue;
+        border-left: 2px solid $color-deep-green;
     }
 }
 
 .blog-sidebar {
-    background: $color-white;
-    padding: 50px 15px;
+    padding: 0 15px 50px 0;
     border-radius: 12px;
 
     .sidebar-heading {
@@ -59,10 +58,10 @@
 
                 a {
                     text-decoration: none;
-                    color: $color-blue;
+                    color: $color-green;
 
                     &:hover {
-                        color: $color-black;
+                        color: $color-deep-green;
                     }
                 }
 

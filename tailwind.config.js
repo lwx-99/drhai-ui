@@ -12,7 +12,7 @@ module.exports = {
       white: '#fff',
 
       primary: {
-        600: '#4cb269',
+        600: '#47b769',
         700: '#2b974a',
       },
 
@@ -21,7 +21,7 @@ module.exports = {
       },
 
       secondary: {
-        600: '#1f4b3e',
+        600: '#006d47',
       },
 
       dark: {

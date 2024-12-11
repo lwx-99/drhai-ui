@@ -23,12 +23,12 @@ const Banner = () => {
                                     <h1>Chuyên gia y khoa hàng đầu trong lĩnh vực cơ xương khớp</h1>
                                     <p className="text-lg">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
 
-                                    <div className="banner-bottom">
+                                    <div className="banner-bottom flex items-center">
                                         <div className="theme-btn">
                                             <Link to="/gioi-thieu">TÌM HIỂU NGAY</Link>
                                         </div>
 
-                                        <div className="banner-call py-6 md:pt-0">
+                                        <div className="banner-call ">
                                             <div className='icon'>
                                                 <img src={icon} alt="icon" />
                                             </div>
@@ -51,8 +51,8 @@ const Banner = () => {
                                             <img src={doctorImg} alt="doctor" />
                                         </div>*/}
                                         <div className='info-text'>
-                                            <p>Dr. Lê Thanh Hải</p>
-                                            <p><small>Bác Sĩ Chuyên Khoa Xương Khớp BV108</small></p>
+                                            <p>PGS. TS. Lưu Hồng Hải</p>
+                                            <p className='title'>Bác sĩ Chấn thương chỉnh hình Bệnh viện<br/> Trung ương Quân đội 108</p>
                                         </div>
                                     </div>  
 

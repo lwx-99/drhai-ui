@@ -9,7 +9,7 @@ const BlogCard = ({post}) => {
             <div className="blog-card">
                 <div className="blog-img">
                     <img className="" src={post.attributes.post_banner.data.attributes.url} alt="blog"/>
-                    <div className="date">
+                    <div className="date text-md shadow-sm">
                         {new Date(post.attributes.publishedAt).toLocaleDateString("vi-VI", {
                         weekday: 'long',
                         year: 'numeric',

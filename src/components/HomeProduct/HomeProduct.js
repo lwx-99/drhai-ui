@@ -38,12 +38,12 @@ function HomeProduct() {
                 <div className='mb-28' key={collection.id}>
                   <div className="mb-8 flex justify-between items-center">
                       <div className='w-auto md:w-auto flex flex-col justify-center'>
-                          <h2 className="text-left text-5xl md:text-5xl text-secondary-600 font-bold">{collection.attributes.ten_bo_san_pham}</h2>
+                          <h2 className="text-left text-4xl md:text-4xl text-secondary-600 font-bold">{collection.attributes.ten_bo_san_pham}</h2>
                       </div>
                   </div>
 
                   <div className='flex justify-center mb-10'>
-                    <p className='w-full text-left text-secondary-600 text-lg'>{collection.attributes.mo_ta_ngan}
+                    <p className='w-full text-left text-base'>{collection.attributes.mo_ta_ngan}
                     </p>
                   </div>
 

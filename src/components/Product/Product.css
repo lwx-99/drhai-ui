@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+    .product-card {
+        margin: 3px !important;
+        padding: 12px !important;
+    }
+   
+}

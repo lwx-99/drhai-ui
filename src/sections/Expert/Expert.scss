@@ -22,7 +22,7 @@
                 font-weight: 500;
 
                 svg {
-                    color: $color-blue;
+                    color: $color-green;
                     margin-right: 15px;
                     top: -1px;
                     position: relative;
@@ -38,6 +38,7 @@
         position: relative;
         z-index: 1;
         margin-bottom: 30px;
+        border-radius: 20px;
 
         &::before {
             position: absolute;
@@ -46,7 +47,7 @@
             height: 125%;
             top: -12%;
             right: 0%;
-            background: #FADBE2;
+            background: #f1f1f1;
             z-index: -1;
             border-radius: 20px;
         }

@@ -1,8 +1,21 @@
 @import './../../sass/fonts.scss';
 @import './../../sass/colors.scss';
 
+.container-nav {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .main-nav {
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,44 +23,85 @@
     z-index: 40;
     background: $color-white;
 
-    .navbar {
+    .navbar-desktop {
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .navbar-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .navbar-main {
         padding: 0;
         
         .navbar-brand {
             img {
-                max-width: 200px;
+                max-width: 220px;
             }
         }
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $color-black;
+                    color: #4d4c4c;
                     font-size: 15px;
                     font-weight: 600;
                     padding: 0;
-                    margin: 10px 30px;
+                    margin: 10px 20px;
 
                     &:hover {
-                        color: $color-blue;
+                        color: $color-deep-green;
                     }
                 }
             }
         }
     }
+
+}
+
+.main-nav.nav-shadow {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
 // Mobile Responsive
 @media (max-width: 575px) {
+    .main-nav.container {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .main-nav {
         padding: 10px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+        
+        .navbar-mobile {
+            display: flex;
+            visibility: visible;
+        }
 
-        .navbar {
+        .navbar-main {
+            .navbar-desktop {
+                display: none;
+                visibility: hidden;
+            }
+
             .navbar-nav {
                 .nav-item {
                     .nav-link {
                         margin: 10px 0px;
+                        padding-right: 3px;
                     }
+
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            .navbar-brand {
+                img {
+                    max-width: 160px;
                 }
             }
         }
@@ -55,16 +109,38 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .main-nav.container {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .main-nav {
         padding: 10px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 
-        .navbar {
+        .navbar-mobile {
+            display: flex;
+            visibility: visible;
+        }
+
+        .navbar-main {
+            .navbar-desktop {
+                display: none;
+                visibility: hidden;
+            }
+
             .navbar-nav {
                 .nav-item {
                     .nav-link {
                         margin: 10px 0px;
+                        padding-right: 3px;
                     }
+                }
+            }
+
+            .navbar-brand {
+                img {
+                    max-width: 160px;
                 }
             }
         }
@@ -73,33 +149,66 @@
 
 // Medium Devices Responsive
 @media (min-width: 768px) and (max-width: 991px) {
+    .main-nav.container {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
     .main-nav {
         padding: 15px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 
-        .navbar {
+        .navbar-mobile {
+            display: flex;
+            visibility: visible;
+        }
+
+        .navbar-main {
+            .navbar-desktop {
+                display: none;
+                visibility: hidden;
+            }
+
             .navbar-nav {
                 .nav-item {
                     .nav-link {
                         margin: 10px 0px;
+                        padding-right: 3px;
                     }
                 }
             }
+
+            .navbar-brand {
+                img {
+                    max-width: 160px;
+                }
+            }
         }
+        
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
     .main-nav {
         padding: 20px 0;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
-        .navbar {
+        .navbar-main {
             .navbar-nav {
                 .nav-item {
                     .nav-link {
                         margin: 10px 15px;
                     }
+                }
+            }
+            .navbar-brand {
+                img {
+                    max-width: 160px;
                 }
             }
         }

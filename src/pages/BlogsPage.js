@@ -21,7 +21,7 @@ const Meta = styled.a`
   }
 `
 const ButtonContainer =  styled.div`${tw `flex justify-center items-center w-full`}`;
-const LoadMoreButton =  styled.button`${tw `mt-16 mx-auto font-medium text-lg text-white px-4 py-2 rounded-lg border border-primary-700 bg-primary-700 hover:bg-secondary-600`}`;
+const LoadMoreButton =  styled.button`${tw `mt-16 uppercase mx-auto font-bold text-base text-white px-6 py-2 rounded-full border bg-secondary-600 hover:bg-primary-600`}`;
 
 
 const override = {
@@ -84,7 +84,7 @@ const BlogsPage = ({categories}) => {
                 </div>
               </div>
               { !isLoading ? 
-                  <section className='pb-70' data-aos="fade-up" data-aos-duration="2000">
+                  <section className='pb-70'>
                       <div className="container ">
                           <div className="mb-5 flex items-center gap-2 mt-16">
                               <p className="font-semibold text-base text-dark-500 mr-1">Danh mục:</p>
