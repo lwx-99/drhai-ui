@@ -38,7 +38,7 @@ const Expert = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mt-4 md:mt-0">
                         <div className="expert-img">
                             <img src={expertImg} alt="expert" className='rounded-3xl'/>
                         </div>
