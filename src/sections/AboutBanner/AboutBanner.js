@@ -172,7 +172,7 @@ const AboutBanner = () => {
                                                 <ul>
                                                     {quatrinhdaotao.map( (daotao) =>  (
                                                             <li className='mb-4'>
-                                                                <p className='text-left'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
+                                                                •<p className='text-left ml-1'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
                                                             </li>
                                                         )           
                                                     )}
@@ -200,7 +200,7 @@ const AboutBanner = () => {
                                                 <ul>
                                                     {kinhnghiem.map( (daotao) =>  (
                                                             <li className='mb-4'>
-                                                                <p className='text-left'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
+                                                                •<p className='text-left ml-1'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
                                                             </li>
                                                         )           
                                                     )}
@@ -230,7 +230,7 @@ const AboutBanner = () => {
                                                 <ul>
                                                     {giaithuong.map( (daotao) =>  (
                                                             <li className='mb-4'>
-                                                                <p className='text-left'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
+                                                                •<p className='text-left ml-1'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
                                                             </li>
                                                         )           
                                                     )}
@@ -258,7 +258,7 @@ const AboutBanner = () => {
                                                 <ul>
                                                     {xuatban.map( (daotao) =>  (
                                                             <li className='mb-4'>
-                                                                <p className='text-left'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
+                                                                •<p className='text-left ml-1'><span className='font-semibold'>{daotao.year}</span>: <span>{daotao.title}</span></p>
                                                             </li>
                                                         )           
                                                     )}

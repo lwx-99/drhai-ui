@@ -36,7 +36,7 @@ const Footer = () => {
     const footerContacts = [
         {
             'title': 'Số điện thoại',
-            'info': '098 123 4567',
+            'info': '097 282 34 28',
             'icon': call
         },
         {
@@ -46,7 +46,7 @@ const Footer = () => {
         },
         {
             'title': 'Trụ sở chính',
-            'info': 'Số 1 Tôn Thất Tùng, Q. Đống Đa, Hà Nội ',
+            'info': 'Tòa T1, Số 3 Lương Yên, P. Bạch Đằng, Q. Hai Bà Trưng, Hà Nội',
             'icon': location
         }
     ]
@@ -59,14 +59,12 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p className="short-des">DRHAI Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className="short-des">Đại tá, Phó Giáo sư, Tiến sỹ, Thầy thuốc Ưu tú LƯU HỒNG HẢI - DR.Hải108 là chuyên gia hàng đầu về lĩnh vực phẫu thuật Chấn thương - Chỉnh hình và Khám, chữa bệnh Cơ - Xương - Khớp. Với hơn 30 năm kinh nghiệm trong nghề và trải qua nhiều vị trí chuyên môn, DR.Hải108 sẽ luôn là địa chỉ tin cậy cùng đồng hành với người bệnh qua quá trình tư vấn và điều trị dứt điểm các bệnh và triệu chứng liên quan đến cơ - xương - khớp</p>
 
                         <div className="social-logo">
                             <p>Theo dõi chúng tôi trên</p>
                             <ul>
-                                <li><a href="/"><FaFacebookF/></a></li>
-                                <li><a href="/"><FaTwitter/></a></li>
-                                <li><a href="/"><FaInstagram/></a></li>
+                                <li><a href="/https://www.facebook.com/drhai108"><FaFacebookF/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,8 +89,8 @@ const Footer = () => {
                                                     <img src={footerContact.icon} alt="call" />
                                                 </div>
                                                 <div className="contact-text">
-                                                    <p>{footerContact.title}</p>
-                                                    <h5>{footerContact.info}</h5>
+                                                    <h5>{footerContact.title}</h5>
+                                                    <p>{footerContact.info}</p>
                                                 </div>
                                             </div>
                                 })
@@ -103,7 +101,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Copyright 2024. Bản quyền thuộc về DRHAI.</p>
+                        <p>&copy; Copyright 2024. Bản quyền thuộc về DRHAI108.</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>

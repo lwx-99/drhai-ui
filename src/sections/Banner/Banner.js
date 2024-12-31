@@ -21,7 +21,7 @@ const Banner = () => {
                             <div className="col-lg-6 h-full flex justify-center items-center">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
                                     <h1>Chuyên gia y khoa hàng đầu trong lĩnh vực cơ xương khớp</h1>
-                                    <p className="text-lg">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                    <p className="text-lg">Chuyên gia hàng đầu về lĩnh vực phẫu thuật Chấn thương - Chỉnh hình và Khám, chữa bệnh Cơ-Xương-Khớp</p>
 
                                     <div className="banner-bottom flex items-center">
                                         <div className="theme-btn">
@@ -34,7 +34,7 @@ const Banner = () => {
                                             </div>
                                             <div className='call-text'>
                                                 <p>Hotline tư vấn</p>
-                                                <h6>098 123 4567</h6>
+                                                <h6>097 282 34 28</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -51,8 +51,8 @@ const Banner = () => {
                                             <img src={doctorImg} alt="doctor" />
                                         </div>*/}
                                         <div className='info-text'>
-                                            <p>PGS. TS. Lưu Hồng Hải</p>
-                                            <p className='title'>Bác sĩ Chấn thương chỉnh hình Bệnh viện<br/> Trung ương Quân đội 108</p>
+                                            <p><span>Đại tá, Phó Giáo sư, Tiến sỹ</span> Lưu Hồng Hải</p>
+                                            <p className='title'>Bác sĩ Khoa chấn thương chỉnh hình Bệnh viện Trung ương Quân đội 108</p>
                                         </div>
                                     </div>  
 

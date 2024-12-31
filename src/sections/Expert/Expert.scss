@@ -17,9 +17,10 @@
             margin: 0;
 
             li {
-                list-style: none;
+                list-style: disc;
                 margin-bottom: 10px;
                 font-weight: 500;
+                list-style-position: inside;
 
                 svg {
                     color: $color-green;

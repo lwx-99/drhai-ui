@@ -6,7 +6,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Appointment = () => {
 
-    const mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.6969712017844!2d105.8299459444295!3d21.003000697886492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7e0d67debd%3A0x67c85fb32b25828!2zMSBUw7RuIFRo4bqldCBUw7luZywgS2jGsMahbmcgVGjGsOG7o25nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e1!3m2!1sen!2s!4v1733227946547!5m2!1sen!2s"
+    const mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.067341352872!2d105.8638455!3d21.010199099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0067d49c1b%3A0x39ba94cade72ed64!2sS%E1%BA%A3nh%20T1%20-%20Sun%20Grand%20City%20Ancora!5e1!3m2!1sen!2s!4v1735625969409!5m2!1sen!2s"
 
     return (
         <section className='appointment-section pt-100 pb-70'>
@@ -18,7 +18,7 @@ const Appointment = () => {
 
                             <div className="location-name">
                                 <AiFillHome />
-                                <p>Số 1 Tôn Thất Tùng, Q. Đống Đa, Hà Nội</p>
+                                <p>Tòa T1, Số 3 Lương Yên, P. Bạch Đằng, Q. Hai Bà Trưng, Hà Nội</p>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const Appointment = () => {
                             <SectionTitle 
                             subTitle="LIÊN HỆ TƯ VẤN"
                             title="Giải đáp đến từ chuyên gia"
-                            description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual"/>
+                            description="Vui lòng để lại câu hỏi và SĐT của bạn, đội ngũ tư vấn viên của chúng tôi sẽ tổng hợp và gửi câu hỏi trực tiếp tới Bác sĩ Hải. Xin cảm ơn."/>
 
                             <ContactForm />
                         </div>

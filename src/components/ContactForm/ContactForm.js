@@ -55,7 +55,7 @@ const ContactForm = () => {
                         </div>
                         <div className='call-text'>
                             <p>Hotline liên hệ</p>
-                            <h6>098 123 4567</h6>
+                            <h6>097 282 34 28</h6>
                         </div>
                     </div>
                 </div>

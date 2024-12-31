@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Emergency = () => {
     return (
-        <section className='emergency-section'>
+        <section className='emergency-section pt-50 pb-50'>
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-6">
